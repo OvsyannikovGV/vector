@@ -113,9 +113,7 @@ void Vector<T>::reserve(unsigned int capacity)
         my_capacity = 0;
     }    
     T * Newbuffer = new T [capacity];
-    //assert(Newbuffer);
     unsigned int l_Size = capacity < my_size ? capacity : my_size;
-    //copy (buffer, buffer + l_Size, Newbuffer);
 
     for (unsigned int i = 0; i < l_Size; i++)
         Newbuffer[i] = buffer[i];
